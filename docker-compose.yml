@@ -20,6 +20,18 @@ services:
       context: image3/
       dockerfile: Dockerfile
     volumes:
-      - "./image1:/root/server"
+      - "./image3:/root/server"
     tty: true
     stdin_open: true
+  image4:
+    build:
+      context: image4/
+      dockerfile: Dockerfile
+    volumes:
+      - "./image4:/root/server"
+      - "image4-node_modules:/root/server/node_modules"
+    tty: true
+    stdin_open: true
+
+volumes:
+  image4-node_modules:
