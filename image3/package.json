@@ -1,0 +1,17 @@
+{
+  "name": "docker-volume-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "ts-node app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^13.5.1",
+    "express": "^4.17.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}

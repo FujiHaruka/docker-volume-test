@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  image1:
+    build:
+      context: image1/
+      dockerfile: Dockerfile
+    volumes:
+      - "./image1:/root/server"
+    tty: true
+    stdin_open: true
+  image2:
+    build:
+      context: image2/
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
+  image3:
+    build:
+      context: image3/
+      dockerfile: Dockerfile
+    volumes:
+      - "./image1:/root/server"
+    tty: true
+    stdin_open: true
